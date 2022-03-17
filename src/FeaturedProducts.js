@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Container, Row, Accordion, Col} from 'react-bootstrap';
+import { Container, Row, Accordion, Col, Tab, Tabs} from 'react-bootstrap';
 import './featuredproducts.css'
 import Dummy from './lily-banse--YHSwy6uqvk-unsplash.jpg'
 
 const FeaturedProducts = () => {
   const [products, setProducts] = useState([]);
+  
 useEffect(() => {
   fetchProducts();
 }, []);
@@ -15,17 +16,53 @@ const fetchProducts = () => {
     .get('https://sheltered-refuge-85246.herokuapp.com/api/json/')
     .then((res) => {
       console.log(res);
-      setProducts(res.data);
+      let categories={};
+      //for each item in the data response
+      for (let item of res.data) {
+        //define a single category based on the info in the response
+        let category = categories[item.category.title];
+        //if that category doesn't exist already
+        if (!category){
+          //create a new category
+          category = []
+          //and add it to the categories object
+          categories[item.category.title]=category
+        }
+        category.push(item);
+      }
+      console.log(categories)
+      setProducts([...Object.entries(categories)]);
     })
     .catch((err) => {
       console.log(err);
     });
 };
 return (
-
         <Container>
                 <h1>Menu</h1>
-                {products.map((product) => (
+                <Tabs id="tabs" className="mb-3">
+                    {products.map(([category, items])=>(
+                      <Tab eventKey={category} key={category} title={category}>
+                        {items.map((product) => (
+                          <Row key={product.id}>
+                              <Accordion>
+                                  <Accordion.Item eventKey={0}>
+                                      <Accordion.Header>{product.title}</Accordion.Header>
+                                          <Accordion.Body>
+                                              <Row className="information justify-content-md-left">
+                                                  <Col><img src={Dummy} alt='' style={{maxWidth:'3000px'}}></img></Col>
+                                                  <Col md="auto">{product.description}</Col>
+                                                  <div className='price'>{product.price}</div>
+                                              </Row>
+                                          </Accordion.Body>
+                                  </Accordion.Item>
+                              </Accordion>
+                          </Row>
+                        ))}
+                      </Tab>
+                    ))}
+                </Tabs>
+                {/* {products.map((product) => (
                 <Row>
                     <Accordion key={product.id}>
                         <Accordion.Item eventKey={0}>
@@ -39,7 +76,7 @@ return (
                                 </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
-                </Row>))}
+                </Row>))} */}
         </Container>
     )};
 
