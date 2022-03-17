@@ -1,0 +1,12 @@
+.hero {
+    position:relative;
+}
+
+.call {
+    position: absolute;
+    bottom: 3em;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #e09e7e;
+    border-color: #999b9c;
+}

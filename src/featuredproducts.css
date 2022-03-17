@@ -1,0 +1,10 @@
+.information {
+    position: relative
+}
+
+.price {
+    position: absolute;
+    bottom: .25em;
+    right: .25em;
+    width: auto;
+}

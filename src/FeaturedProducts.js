@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Row, Accordion, Col} from 'react-bootstrap';
+import './featuredproducts.css'
+import Dummy from './lily-banse--YHSwy6uqvk-unsplash.jpg'
 
 const FeaturedProducts = () => {
   const [products, setProducts] = useState([]);
@@ -29,12 +31,10 @@ return (
                         <Accordion.Item eventKey={0}>
                             <Accordion.Header>{product.title}</Accordion.Header>
                                 <Accordion.Body>
-                                    <Row className="justify-content-md-left">
-                                        <Col>This is where the image would live</Col>
+                                    <Row className="information justify-content-md-left">
+                                        <Col><img src={Dummy} alt='' style={{maxWidth:'3000px'}}></img></Col>
                                         <Col md="auto">{product.description}</Col>
-                                        <Col xs lg="2">
-                                            {product.price}
-                                        </Col>
+                                        <div className='price'>{product.price}</div>
                                     </Row>
                                 </Accordion.Body>
                         </Accordion.Item>
