@@ -1,0 +1,32 @@
+.hero {
+    position:relative;
+    z-index: 1;
+}
+
+.call {
+    position: absolute;
+    bottom: 6em;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #e09e7e;
+    border-color: #999b9c;
+    height: 75px;
+    width: 200px;
+    font-size: 2.5em;
+    vertical-align: middle;
+}
+
+.call:hover {
+    background-color: #999b9c;
+    border-color: #e09e7e;
+}
+
+.call:active{
+    background-color: #999b9c;
+    border-color: #fff;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus{
+    background-color: #e09e7e;
+    border-color: #999b9c;
+}
