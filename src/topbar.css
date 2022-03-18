@@ -1,5 +1,6 @@
 .bg-light {
     background-color: #9da1a2 !important;
+    height: 3em;
   }
   
   .Brand {
@@ -8,4 +9,8 @@
   
   .Navbar {
     height: 30em;
+  }
+
+  d-inline-block{
+   position: relative;   
   }

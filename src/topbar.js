@@ -1,5 +1,6 @@
 import { Nav, Container, Navbar } from "react-bootstrap";
 import Logo from '/workspace/react-restaurant/src/logo.png'
+import './topbar.css'
 
 export default function Topbar() {
     return (
@@ -12,14 +13,14 @@ export default function Topbar() {
             src={Logo}
             width="150"
             height="150"
-            className="d-inline-block align-top"
-          />{' '}
+            className="align-top mt-4"
+          />
         </Navbar.Brand>
-              <Nav className="me-auto">
+              <Nav className="ml-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#menu">Menu</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#visit">Visit</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
