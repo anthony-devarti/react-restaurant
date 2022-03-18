@@ -9,8 +9,30 @@
     width: auto;
 }
 
-.mb-3{
+.nav-tabs .nav-link{
     color: #ced4d4;
     background-color: #a0a4a5;
+    margin: 2;
     
+}
+
+.nav-tabs .nav-link active{
+    background-color: #ced4d4;
+    color: #ced4d4;
+}
+
+.nav-tabs .nav-link:hover{
+    color: #627f6c;
+}
+
+.nav-link{
+    align-items: flex-end;
+}
+
+.accordion-button:focus{
+    background-color: #627f6c;
+}
+
+.accordion-button:not(.collapsed){
+    color: #ced4d4;
 }
