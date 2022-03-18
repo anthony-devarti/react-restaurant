@@ -4,9 +4,20 @@
 
 .call {
     position: absolute;
-    bottom: 3em;
+    bottom: 8em;
     left:50%;
     transform: translateX(-50%);
     background-color: #e09e7e;
     border-color: #999b9c;
+    
+}
+
+.call:hover {
+    background-color: #999b9c;
+    border-color: #e09e7e;
+}
+
+.call:active{
+    background-color: #999b9c;
+    border-color: #fff;
 }
