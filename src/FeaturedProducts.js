@@ -15,7 +15,7 @@ const fetchProducts = () => {
   axios
     .get('https://sheltered-refuge-85246.herokuapp.com/api/json/')
     .then((res) => {
-      console.log(res);
+      //console.log(res);
       let categories={};
       //for each item in the data response
       for (let item of res.data) {
@@ -30,7 +30,7 @@ const fetchProducts = () => {
         }
         category.push(item);
       }
-      console.log(categories)
+      //console.log(categories)
       setProducts([...Object.entries(categories)]);
     })
     .catch((err) => {

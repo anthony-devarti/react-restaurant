@@ -20,3 +20,7 @@
   d-inline-block{
    position: relative;   
   }
+
+  .restaurantlogo {
+    z-index: 200;
+  }

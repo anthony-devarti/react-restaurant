@@ -13,7 +13,7 @@ export default function Topbar() {
             src={Logo}
             width="150"
             height="150"
-            className="align-top mt-4"
+            className="align-top mt-4 restaurantlogo"
             position="absolute"
           />
         </Navbar.Brand>

@@ -5,7 +5,7 @@ export default function Map() {
         width="200" 
         height="150" 
         style={{border:"0"}} 
-        allowfullscreen="" 
+        allowFullScreen="" 
         loading="lazy"
         ></iframe>
     )
