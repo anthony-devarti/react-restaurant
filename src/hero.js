@@ -9,7 +9,7 @@ export default function Hero(){
         //jsx that makes a hero element
         <div className="hero">
             <img src={heroImage} style={{width:'100vw'}} alt=""></img>
-            <Button className='call' variant="primary">Menu</Button>
+            <Button className='call' variant="primary" href="#menu">Menu</Button>
         </div>
 
     )

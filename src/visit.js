@@ -4,6 +4,7 @@ import { Card, Button, Col } from 'react-bootstrap'
 export default function Visit(){
     return(
         <div id="visit">
+            <div className="row mt-5">
             <Col>
                 <Card style={{ width: '18rem' }}>
                     <Card.Body>
@@ -17,13 +18,21 @@ export default function Visit(){
                                 Saturday - 12PM to 3AM
                                 Wednesday - 11AM to 10PM
                             </Card.Text>
-                        <Button variant="primary">Get Directions</Button>
                     </Card.Body>
                 </Card>
             </Col>
             <Col>
-                Map Goes Here
+                <Card style={{ width: '18rem' }}>
+                    <Card.Body>
+                        <Card.Title>Directions</Card.Title>
+                            <Card.Text>
+                                Map Goes Here
+                            </Card.Text>
+                        <Button variant="primary">Get Directions</Button>
+                    </Card.Body>
+                </Card>
             </Col>
+            </div>
         </div>
     )
 }
