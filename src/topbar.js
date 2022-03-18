@@ -14,6 +14,7 @@ export default function Topbar() {
             width="150"
             height="150"
             className="align-top mt-4"
+            position="absolute"
           />
         </Navbar.Brand>
               <Nav className="ml-auto">

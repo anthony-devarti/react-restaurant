@@ -51,7 +51,7 @@ return (
                                       <Accordion.Header>{product.title}</Accordion.Header>
                                           <Accordion.Body>
                                               <Row className="information justify-content-md-left">
-                                                  <Col><img src={Dummy} alt='' style={{maxWidth:'3000px'}}></img></Col>
+                                                  <Col><img src={Dummy} alt='' style={{maxWidth:'300px'}}></img></Col>
                                                   <Col md="auto">{product.description}</Col>
                                                   <div className='price'>{product.price}</div>
                                               </Row>

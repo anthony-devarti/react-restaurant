@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button, Col } from 'react-bootstrap'
+import Map from './map'
 
 export default function Visit(){
     return(
@@ -26,9 +27,9 @@ export default function Visit(){
                     <Card.Body>
                         <Card.Title>Directions</Card.Title>
                             <Card.Text>
-                                Map Goes Here
+                                <Map />
                             </Card.Text>
-                        <Button variant="primary">Get Directions</Button>
+                        <Button variant="primary" href="https://www.google.com/maps?ll=38.042106,-84.492558&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=608613252348632709">Get Directions</Button>
                     </Card.Body>
                 </Card>
             </Col>

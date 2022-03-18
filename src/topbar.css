@@ -1,3 +1,7 @@
+.topbar {
+  z-index: 2;
+}
+
 .bg-light {
     background-color: #9da1a2 !important;
     height: 3em;
@@ -5,6 +9,8 @@
   
   .Brand {
     position: absolute;
+    top: 7px;
+    left: 7px;
   }
   
   .Navbar {
