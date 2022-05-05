@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-restaurant/static/css/main.a721cc31.css",
+    "main.js": "/react-restaurant/static/js/main.6e91f458.js",
+    "static/js/787.6e590dfb.chunk.js": "/react-restaurant/static/js/787.6e590dfb.chunk.js",
+    "static/media/lily-banse--YHSwy6uqvk-unsplash.jpg": "/react-restaurant/static/media/lily-banse--YHSwy6uqvk-unsplash.6ef6db913df93a631506.jpg",
+    "static/media/arisa-chattasa-QoEvbUUMhJo-unsplash.jpg": "/react-restaurant/static/media/arisa-chattasa-QoEvbUUMhJo-unsplash.295c378d1ace526e5b6c.jpg",
+    "static/media/jan-meeus-7LsuYqkvIUM-unsplash.jpg": "/react-restaurant/static/media/jan-meeus-7LsuYqkvIUM-unsplash.904f0d89bdb8502190ee.jpg",
+    "static/media/logo.png": "/react-restaurant/static/media/logo.60896799ed399c39bfd5.png",
+    "index.html": "/react-restaurant/index.html",
+    "main.a721cc31.css.map": "/react-restaurant/static/css/main.a721cc31.css.map",
+    "main.6e91f458.js.map": "/react-restaurant/static/js/main.6e91f458.js.map",
+    "787.6e590dfb.chunk.js.map": "/react-restaurant/static/js/787.6e590dfb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a721cc31.css",
+    "static/js/main.6e91f458.js"
+  ]
+}
